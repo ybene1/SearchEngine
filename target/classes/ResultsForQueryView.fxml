@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="565.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ResultsForQueryView">
+    <children>
+        <Label layoutX="40.0" layoutY="20.0" prefHeight="65.0" prefWidth="285.0" text="The-Results:" textFill="#0f50dbdd">
+            <font>
+                <Font name="Ink Free" size="40.0" />
+            </font>
+        </Label>
+        <ScrollPane layoutY="106.0" prefHeight="459.0" prefWidth="356.0">
+            <content>
+                <ListView fx:id="lv_resultDisplay" prefHeight="458.0" prefWidth="1000.0" />
+            </content>
+        </ScrollPane>
+        <Label layoutY="86.0" text="Query ID,Documents">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>
